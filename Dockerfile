@@ -6,7 +6,8 @@ RUN apt-get update \
         wget \
         make \
         cmake \
-        gcc-c++ \
+        gcc \
+        g++ \
     && rm -rf /var/lib/apt/lists/*
 
 
