@@ -2,8 +2,8 @@ FROM python:3.11.9-slim-bullseye as builder
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-    && git \
-    && wget \
+        git \
+        wget \
     && rm -rf /var/lib/apt/lists/*
 
 
