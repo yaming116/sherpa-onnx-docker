@@ -9,6 +9,8 @@ RUN apt-get update \
 
 WORKDIR /app
 
+RUN  pip install cmake
+
 RUN git clone https://github.com/k2-fsa/sherpa-onnx
 
 RUN cd sherpa-onnx && mkdir build \
