@@ -4,6 +4,9 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         git \
         wget \
+        make \
+        cmake \
+        gcc-c++ \
     && rm -rf /var/lib/apt/lists/*
 
 
